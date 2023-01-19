@@ -1,0 +1,151 @@
+body {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Anton', sans-serif;
+    background-color: rgb(100, 251, 80);
+}
+
+
+main {
+    height: 325px;
+    background-image: url("./imgs/AboutMebackgroundPhoenix.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    /* object-fit: scale-down; */
+}
+
+h1 {color: white;}
+/* border: 5px solid blue;
+border-radius: 75px;} */
+
+.container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px 39px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "main"
+          "image-1"
+          "paragraph-1"
+          "image-2"
+          "paragraph-2"
+          "image-3"
+          "paragraph-3";
+      
+        font-size: 16px;
+        height: 100vh
+}
+
+  
+
+   main {grid-area: main;}
+
+  .image-1 { grid-area: image-1; }
+  
+  .image-2 { grid-area: image-2; }
+  
+  .image-3 { grid-area: image-3; }
+  
+  .paragraph-1 { grid-area: paragraph-1; }
+  
+  .paragraph-2 { grid-area: paragraph-2; }
+  
+  .paragraph-3 { grid-area: paragraph-3; }
+  
+
+img {
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+    object-fit: fill;
+    border-radius: 50px;
+}
+
+.paragraph-1, .paragraph-2, .paragraph-3 {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.image-1, .image-2, .image-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+@media (min-width: 576px){
+    .container {  
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px 39px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "main main"
+      "image-1 paragraph-1"
+      "image-2 paragraph-2"
+      "image-3 paragraph-3";
+    
+    font-size: 20px;}
+
+    .paragraph-1, .paragraph-2, .paragraph-3 {
+      text-align: left;
+      height: 100%;
+      width: 75%;
+    }
+
+  .image-1, .image-2, .image-3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+   }
+
+}
+
+@media (min-width: 992px){
+  .container {  
+      display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px 39px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "main main"
+    "image-1 paragraph-1"
+    "image-2 paragraph-2"
+    "image-3 paragraph-3";
+  
+  font-size: 24px;
+}
+
+.paragraph-1, .paragraph-2, .paragraph-3 {
+  text-align: left;
+  height: 100%;
+  width: 75%;
+}
+
+.image-1, .image-2, .image-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+}
+

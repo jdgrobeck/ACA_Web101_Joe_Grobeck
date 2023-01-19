@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/7533f19130.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./contact-styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <title>Contact</title>
+</head>
+<body>
+<div class="container">
+    <main>
+        <h1>Contact</h1>
+    </main>
+    <div class="image-1">
+        <i class="fa-solid fa-phone fa-5x"></i>
+    </div>
+
+    <div class="image-2">
+        <i class="fa-solid fa-envelope fa-5x"></i>
+
+    </div>
+
+    <div class="forms-1">
+        <form action="contact-results.html" method="GET" enctype="multipart/form-data">
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" >
+            </div>
+        <br>
+        <br>
+    
+        
+            <div>
+              <label for="comments">Comments:</label>
+              <input type="textarea" name="comments" id="comments" placeholder="comments" minlength="20">
+            </div>
+        <br>
+        <br>
+        
+            <div>
+              <label for="hear">How did you hear about me?:</label>
+                <input type="checkbox" name="classmate" id="classmate">
+                    <label for="classmate">Classmate</label>
+                <input type="checkbox" name="resume-submission" id="resume-submission">
+                    <label for="resume-submission">Resume Submission</label>
+                <input type="checkbox" name="linkedin" id="linkedin">
+                    <label for="linkedin">LinkedIn</label>
+                <input type="checkbox" name="coding-academy-rec" id="coding-academy-rec">
+                    <label for="coding-academy-rec">Coding Academy Rec</label>
+            </div>
+        <br>
+        <br>
+        
+            <div>
+              Do you want to be contacted?:
+              <div>
+                <label for="yes">Yes</label>
+                    <input type="radio" name="contact" id="yes" value="Yes">
+                <label for="no">No</label>
+                    <input type="radio" name="contact" id="no" value="No">
+              </div>
+        <br>
+        <br>
+        
+            <div>
+                <label for="birthdate">Want a special birthday wish? Submit your birthday here!:</label>
+                <input type="date" name="birthdate" id="birthdate">
+            </div>
+        <br>
+        <br>
+        
+        
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+          </form>
+ </div>
+
+</div>
+
+   
+  <!-- <script src="scripts.js"></script> -->
+</body>
+</html>

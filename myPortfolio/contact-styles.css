@@ -1,0 +1,113 @@
+body {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Anton', sans-serif;
+    background-color: aquamarine;
+}
+
+
+main {
+    height: 325px;
+    background-image: url("./imgs/AboutMebackgroundPhoenix.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* object-fit: scale-down; */
+}
+
+
+    .container {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 10px 39px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "main"
+          "image-1"
+          "forms-1"
+          "image-2";
+      
+        font-size: 14px;
+        height: 100vh;
+
+          }
+  
+   main {grid-area: main;}
+
+  .image-1 { grid-area: image-1;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+  
+  .image-2 { grid-area: image-2;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+  
+  .forms-1 { grid-area: forms-1;
+            height: 400px; 
+            width: 350px;}
+  
+
+ i {
+    /* height: 300px;
+    width: 300px; */
+    /* margin-top: 20px; */
+    object-fit: fill;
+    border-radius: 50px;
+    color: blue;
+    
+}
+
+@media (min-width: 576px){
+    .container {  
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 39px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "main main"
+      "image-1 forms-1"
+      "image-2 forms-1";
+  
+    font-size: 14px;
+
+}
+.image-1 {height: 100%;
+          } 
+.image-2 {
+    height: 100%;
+    margin-top: 50px;
+ }
+}
+
+@media (min-width: 992px) { 
+    .container 
+     {
+        /* display: grid; */
+/* grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+gap: 10px 39px;
+grid-auto-flow: row;
+grid-template-areas:
+  "main main"
+  "image-1 forms-1"
+  "image-2 forms-1"; */
+
+font-size: 16px;
+
+}
+}
